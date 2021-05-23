@@ -1,0 +1,46 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #333;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem; /* Usually around 19pt */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    color: #1f0537;
+    font-family: "Bitter","Roboto Slab","Segoe UI","Libre Baskerville","Droid Sans","Ubuntu","Helvetica Neue",Helvetica,Arial,serif,"Segoe Chess","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#current-container {
+  width: 100%;
+  margin-top: 2.0em;
+  margin-bottom: 3.0em;
+}
+
+#current-container p {
+  font-size: 0.7em;
+  color: #777;
+  text-align: center;
+}
+
+.current-temperature, .current-pressure {
+  color: #222;
+  text-align: center;
+}
+
+.current-temperature {
+  font-size: 6.0em;
+}
+
+.current-pressure {
+  font-size: 3.0em;
+}
+
+.unit {
+  font-size: 0.6em;
+  color: #666;
+}

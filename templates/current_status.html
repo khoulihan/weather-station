@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="{{ url_for('static', filename='css/main.css') }}" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="current-container">
+      <div class="current-temperature">{{temperature}}<span class="unit">°C</span></div>
+      <div class="current-pressure">{{pressure}}<span class="unit"> hPa</span></div>
+      <p>...as of {{last_updated}}</p>
+    </div>
+    <div id="recent-charts">
+      <embed type="image/svg+xml" src= {{ last_24_hours_temp|safe }} />
+      <embed type="image/svg+xml" src= {{ last_24_hours_pressure|safe }} />
+      <embed type="image/svg+xml" src= {{ last_30_days_temp|safe }} />
+      <embed type="image/svg+xml" src= {{ last_30_days_pressure|safe }} />
+    </div>
+  </body>
+</html>
